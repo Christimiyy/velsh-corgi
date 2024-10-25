@@ -1,0 +1,210 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat.ttf") format("ttf");
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    width: 60%;
+    font-size: 18px;
+    color: #1c1c1c;
+    margin-left: auto;
+    margin-right: auto;
+	background-color: #f7f7f7;
+}
+.main-menu{
+    top: 70px;
+	width: 15%;
+	height: 100%;
+	list-style: none;
+	/* border: 2px solid #1c1c1c; */
+	background-color: #E29C54;
+	position: fixed;
+	visibility: hidden;
+	left: -100%;
+	transition-duration: 1s;
+}
+.main-menu li{
+	padding: 20px;
+	border-bottom: 2px solid #1c1c1c;
+}
+#menu-toggle{
+	visibility: hidden;
+}
+.menu-btn{
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: fixed;
+	transition-duration: 1s;
+	margin-left: -18%;
+	margin-top: 10px;
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after{
+	display: block;
+	width: 100%;
+	height: 6px;
+	background-color: #E29C54;
+	position: absolute;
+	transition-duration: 1s;
+}
+.menu-btn span::before{
+	content: "";
+	top: -10px;
+}
+.menu-btn span::after{
+	content: "";
+	top: 10px;
+}
+#menu-toggle:checked ~ .main-menu{
+	visibility: visible;
+	left: 0;
+	transition-duration: 1s;
+}
+#menu-toggle:checked ~ .menu-btn{
+	transform: rotate(45deg);
+	transition-duration: 1s;
+}
+#menu-toggle:checked ~ .menu-btn span::before{
+	transform: rotate(90deg);
+	top: 0;
+	transition-duration: 1s;
+}
+#menu-toggle:checked ~ .menu-btn span::after{
+	top: 0;
+	transition-duration: 1s;
+}
+.paragraph{
+    color: #E29C54;
+    font-size: 24px;
+}
+.subparagraph{
+    font-size: 22px;
+}
+.item{
+    font-size: 18px;
+}
+.card-corgi{
+	width: 35%;
+    border-radius: 20px;
+    /* border: 2px solid #1c1c1c; */
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 50px;
+    text-align: center;
+	background-color: blanchedalmond;
+	display: block;
+}
+.corgi-img{
+    width: 90%;
+    border-radius: 10px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 2px solid #1c1c1c; */
+}
+.container-cards-corgi{
+    display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+}
+.card-text{
+	text-align: left;
+	height: auto;
+}
+.section{
+	margin-bottom: 50px;
+}
+a{
+	color: #1c1c1c;
+}
+p::selection {
+	background-color: #fff2a8;
+}
+span::selection {
+	background-color: #fff2a8;
+}
+h1::selection {
+	background-color: #fff2a8;
+}
+h2::selection {
+	background-color: #fff2a8;
+}
+h3::selection {
+	background-color: #fff2a8;
+}
+li::selection {
+	background-color: #fff2a8;
+}
+img::selection {
+	background-color: #fff2a8;
+}
+a::selection {
+	background-color: #fff2a8;
+}
+@media  (max-width: 1024px) {
+	body {
+		width: 80%;
+		font-size: 16px;
+	}
+	.container-cards-corgi{
+		display: block;
+	}
+	.card-corgi{
+		width: 80%;
+	}
+	.menu-btn{
+		margin-left: -7%;
+	}
+	.main-menu{
+		width: 50%;
+	}
+	.paragraph{
+		color: #E29C54;
+		font-size: 22px;
+	}
+	.subparagraph{
+		font-size: 20px;
+	}
+	.item{
+		font-size: 16px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.main-menu{
+		width: 30%;
+	}
+	.container-cards-corgi{
+		display: flex;
+	}
+	.card-corgi{
+		width: 35%;
+	}
+}
+@media  (max-width: 768px) {
+	.card-text{
+		width: 80%;
+	}
+}
+@media  (max-width: 375px) {
+	.menu-btn{
+		margin-left: -7%;
+		width: 23px;
+		height: 20px;
+	}
+	.menu-btn span,
+	.menu-btn span::before,
+	.menu-btn span::after{
+		height: 5px;
+	}
+	.menu-btn span::before{
+		top: -8px;
+	}
+	.menu-btn span::after{
+		top: 8px;
+	}
+}
