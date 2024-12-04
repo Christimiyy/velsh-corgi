@@ -146,6 +146,9 @@ img::selection {
 a::selection {
 	background-color: #fff2a8;
 }
+.mail {
+	margin-bottom: 20px;
+}
 @media  (max-width: 1024px) {
 	body {
 		width: 80%;
