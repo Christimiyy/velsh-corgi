@@ -146,11 +146,11 @@ img::selection {
 a::selection {
 	background-color: #fff2a8;
 }
-.mail a {
+.mail a{
     color: #E29C54;
     text-decoration: none;
 }
-.mail:hover a {
+.mail a:hover{
     color: #E29C54;
     text-decoration: underline;
 }
