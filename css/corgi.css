@@ -11,7 +11,7 @@ body {
     margin-right: auto;
 	background-color: #f7f7f7;
 }
-.main-menu{
+.main-menu {
     top: 70px;
 	width: 15%;
 	height: 100%;
@@ -23,14 +23,14 @@ body {
 	left: -100%;
 	transition-duration: 1s;
 }
-.main-menu li{
+.main-menu li {
 	padding: 20px;
 	border-bottom: 2px solid #1c1c1c;
 }
-#menu-toggle{
+#menu-toggle {
 	visibility: hidden;
 }
-.menu-btn{
+.menu-btn {
 	display: block;
 	width: 30px;
 	height: 30px;
@@ -41,7 +41,7 @@ body {
 }
 .menu-btn span,
 .menu-btn span::before,
-.menu-btn span::after{
+.menu-btn span::after {
 	display: block;
 	width: 100%;
 	height: 6px;
@@ -49,43 +49,43 @@ body {
 	position: absolute;
 	transition-duration: 1s;
 }
-.menu-btn span::before{
+.menu-btn span::before {
 	content: "";
 	top: -10px;
 }
-.menu-btn span::after{
+.menu-btn span::after {
 	content: "";
 	top: 10px;
 }
-#menu-toggle:checked ~ .main-menu{
+#menu-toggle:checked ~ .main-menu {
 	visibility: visible;
 	left: 0;
 	transition-duration: 1s;
 }
-#menu-toggle:checked ~ .menu-btn{
+#menu-toggle:checked ~ .menu-btn {
 	transform: rotate(45deg);
 	transition-duration: 1s;
 }
-#menu-toggle:checked ~ .menu-btn span::before{
+#menu-toggle:checked ~ .menu-btn span::before {
 	transform: rotate(90deg);
 	top: 0;
 	transition-duration: 1s;
 }
-#menu-toggle:checked ~ .menu-btn span::after{
+#menu-toggle:checked ~ .menu-btn span::after {
 	top: 0;
 	transition-duration: 1s;
 }
-.paragraph{
+.paragraph {
     color: #E29C54;
     font-size: 24px;
 }
-.subparagraph{
+.subparagraph {
     font-size: 22px;
 }
-.item{
+.item {
     font-size: 18px;
 }
-.card-corgi{
+.card-corgi {
 	width: 35%;
     border-radius: 20px;
     /* border: 2px solid #1c1c1c; */
@@ -97,7 +97,7 @@ body {
 	background-color: blanchedalmond;
 	display: block;
 }
-.corgi-img{
+.corgi-img {
     width: 90%;
     border-radius: 10px;
     display: block;
@@ -107,19 +107,19 @@ body {
     margin-right: auto;
     /* border: 2px solid #1c1c1c; */
 }
-.container-cards-corgi{
+.container-cards-corgi {
     display: flex;
 	flex-wrap: wrap;
 	text-align: left;
 }
-.card-text{
+.card-text {
 	text-align: left;
 	height: auto;
 }
-.section{
+.section {
 	margin-bottom: 50px;
 }
-a{
+a {
 	color: #1c1c1c;
 }
 p::selection {
@@ -146,14 +146,13 @@ img::selection {
 a::selection {
 	background-color: #fff2a8;
 }
-.mail a{
+.mail a {
     color: #E29C54;
     text-decoration: none;
 }
-.mail a:hover{
+.mail a:hover {
     color: #E29C54;
     text-decoration: underline;
-
 }
 @media  (max-width: 1024px) {
 	body {
