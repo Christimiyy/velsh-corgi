@@ -146,9 +146,13 @@ img::selection {
 a::selection {
 	background-color: #fff2a8;
 }
-.mail.a {
-    color: #E29C54;
+.mail a {
+    color: #B54172;
     text-decoration: none;
+}
+.mail a:hover {
+    color: #B54172;
+    text-decoration: underline;
 }
 @media  (max-width: 1024px) {
 	body {
