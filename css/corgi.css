@@ -146,7 +146,7 @@ img::selection {
 a::selection {
 	background-color: #fff2a8;
 }
-.footer_link {
+a {
 	color: #E29C54;
 }
 @media  (max-width: 1024px) {
