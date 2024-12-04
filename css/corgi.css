@@ -150,7 +150,7 @@ a::selection {
     color: #E29C54;
     text-decoration: none;
 }
-a:hover {
+.mail:hover a {
     color: #E29C54;
     text-decoration: underline;
 }
