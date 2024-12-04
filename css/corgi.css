@@ -119,9 +119,9 @@ body {
 .section {
 	margin-bottom: 50px;
 }
-a {
+/* a {
 	color: #1c1c1c;
-}
+} */
 p::selection {
 	background-color: #fff2a8;
 }
@@ -143,9 +143,9 @@ li::selection {
 img::selection {
 	background-color: #fff2a8;
 }
-a::selection {
+/* a::selection {
 	background-color: #fff2a8;
-}
+} */
 .mail a{
     color: #B54172;
     text-decoration: none;
